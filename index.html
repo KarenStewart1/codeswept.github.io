@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeSwept LLC</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #f8f8f8;
+        color: #222;
+      }
+
+      header {
+        padding: 64px 20px 40px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin: 0;
+      }
+
+      .links {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      a {
+        display: inline-block;
+        padding: 12px 20px;
+        background: white;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #222;
+        font-weight: 500;
+        border: 1px solid #ddd;
+        transition: all 0.2s ease;
+      }
+
+      a:hover {
+        border-color: #bbb;
+        transform: translateY(-2px);
+      }
+
+      footer {
+        margin-top: 80px;
+        padding: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>CodeSwept LLC</h1>
+      <p>codeswept@gmail.com</p>
+
+      <div class="links">
+        <a href="https://www.playquestionable.eu" target="_blank"
+          >PlayQuestionable</a
+        >
+        <a href="https://www.statiecheck.nl" target="_blank">StatieCheck</a>
+      </div>
+    </header>
+
+    <footer>© <span id="year"></span> CodeSwept LLC</footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
